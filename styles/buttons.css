@@ -44,12 +44,12 @@
 }
 
 .btn[aria-label] {
-    position: absolute;
+    position: relative;
 
     &::before {
         content: "";
-        border-radius: inherit;
         position: absolute;
+        border-radius: inherit;
         inset: 0.09375rem;
         background-color: var(--bg-color);
     }
@@ -61,6 +61,9 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+
+        position: relative;
+        z-index: 1;
     }
 }
 
